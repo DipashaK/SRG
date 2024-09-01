@@ -1,0 +1,34 @@
+.navbar {
+  background-color: #F5DEB3;
+  color: brown; 
+  position: relative; 
+}
+
+.dropdown-menu {
+  display: none; 
+  position: absolute;
+  top: 100%; 
+  right: 0;
+  background-color: #F5DEB3;
+  color: brown;
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+.dropdown-menu.show {
+  display: block;
+}
+
+.dropdown-item {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.dropdown-item:hover {
+  background-color: orange;
+}
+
+.navbar-user {
+  position: relative;
+}

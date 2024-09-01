@@ -1,0 +1,83 @@
+/* Sidebar styles */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #F5DEB3;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* z-index: 1000; */
+  }
+  
+  .sidebar-open {
+    transform: translateX(0); /* Sidebar visible */
+  }
+  
+  .sidebar-closed {
+    transform: translateX(-100%); /* Sidebar hidden */
+  }
+  
+  .sidebar-toggle {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: #000;
+    z-index: 1001; /* Ensure toggle button is above sidebar */
+  }
+  
+  /* Menu items */
+  .sidebar-link {
+    display: flex;
+    align-items: center;
+    color: brown;
+    text-decoration: none;
+  }
+  
+  .sidebar-link:hover {
+    background-color: #f59e0b; /* Hover color */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 1024px) {
+    .sidebar {
+      width: 80%;
+      max-width: 250px; /* Adjust as needed */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .sidebar {
+      width: 100%;
+      max-width: none;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+  
+    .sidebar-menu {
+      margin-top: 4rem; /* Adjust margin for mobile */
+    }
+  
+    .sidebar-link {
+      padding: 1rem; /* Adjust padding for smaller screens */
+    }
+  
+    .sidebar-toggle {
+      display: block; /* Show toggle button on mobile */
+    }
+  
+    .sidebar-open {
+      transform: translateX(0); /* Visible */
+    }
+  
+    .sidebar-closed {
+      transform: translateX(-100%); /* Hidden */
+    }
+  }
+  
+  @media (min-width: 769px) {
+    .sidebar-toggle {
+      display: none; /* Hide toggle button on larger screens */
+    }
+  }
+  

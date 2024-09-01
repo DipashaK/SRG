@@ -1,0 +1,14 @@
+body{
+    background-image: url(../images/main.jpg);
+    
+  }
+  #add-file-btn{
+    height: 70px;
+    width: 200px;
+    background-color: rgb(93, 0, 0);
+    border-radius: 40px;
+    font-size: large;
+    color: white;
+    border: none;
+    margin: 15%;
+  }
